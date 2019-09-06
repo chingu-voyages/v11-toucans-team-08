@@ -1,2 +1,2 @@
 # v11-toucans-team-08
-Add-project-description-here | Voyage-11 | https://chingu.io/ | https://twitter.com/ChinguCollabs
+FanCool: Landing Page for Electric Fans | Voyage-11 | https://chingu.io/ | https://twitter.com/ChinguCollabs
