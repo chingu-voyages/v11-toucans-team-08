@@ -1,3 +1,107 @@
-*{
-  box-sizing: border-box;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+}
+
+/**Section - Tribute**/
+
+.tribute {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: #fafafa;
+}
+
+.tribute-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+
+.tribute-item {
+    padding: 20px;
+    text-align: center;
+    margin: 0px 70px;
+}
+
+.tribute-item p {
+    margin-bottom: 0px;
+    font-family: "Whitney A", "Whitney B", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+}
+
+
+.tribute-item img {
+    background: transparent;
+    width: 70px;
+    height: 70px;
+}
+
+.mission-background {
+    background-image: url('assets/images/mission-background.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 535px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 50px;
+}
+
+.mission-content {
+    margin: 0 40px;
+    text-align: center;
+}
+
+.mission-title {
+    display: flex;
+    justify-content: center;
+    margin: 0 5px;
+    font-weight: 500;
+    color: #fff;
+    font-size: 60px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #000;
+}
+
+.mission-content p:nth-child(2) {
+    color: #fff;
+    font-size: 25px;
+}
+
+/**Media Queries*/
+@media (max-width: 800px) {
+    .tribute-container {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .tribute-item {
+        padding: 7px;
+    }
+
+    .tribute-item img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .mission-background {
+        background-image: url('assets/images/mission-background.jpg');
+        min-height: 200px;
+    }
+
+    .mission-title {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .mission-content p:nth-child(2) {
+        color: #fff;
+        font-size: 15px;
+    }
 }
