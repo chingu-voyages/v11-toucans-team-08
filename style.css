@@ -77,7 +77,7 @@ nav ul {
 
 .image-slider-container{
     position: relative;
-    min-height: 30vh;
+    min-height: 10vh;
     max-width: 90%;
     margin: 0 auto;
     padding: 40px;
