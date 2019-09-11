@@ -2,56 +2,62 @@
     box-sizing: border-box;
 }
 
-body {  
+body {
     margin: 0 auto;
     padding: 0;
 }
 
 /**header**/
-header{
+header {
     min-height: 30px;
     width: 100%;
     margin-bottom: 2rem;
     padding: 0 10px 0 10px;
 }
-.header-container{
+
+.header-container {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     flex-wrap: wrap;
 }
-.logo{
+
+.logo {
     margin-right: auto;
 }
-.logo h2{
+
+.logo h2 {
     color: brown;
     font-size: 30px;
     font-family: 'Mukta', sans-serif;
     cursor: pointer;
 }
-.nav-links a{
+
+.nav-links a {
     color: brown;
     text-decoration: none;
     display: inline-block;
     padding: .5em .5em;
 }
 
-.nav-links a:hover{
+.nav-links a:hover {
     color: darkgrey;
 }
-nav ul{
+
+nav ul {
     padding: 0;
     text-align: center;
 }
 
-.nav-links li{
+.nav-links li {
     display: inline;
 }
 
-.nav-links{
+.nav-links {
     list-style-type: none;
 }
-.shop-button button{
+
+.shop-button button {
     font-size: 16px;
     color: darkgrey;
     font-weight: bolder;
@@ -61,7 +67,8 @@ nav ul{
     padding: 5px 20px 5px 20px;
     margin-left: 10px;
 }
-.shop-button button:hover{
+
+.shop-button button:hover {
     background-color: rgb(187, 100, 100);
 }
 
@@ -100,6 +107,14 @@ nav ul{
     width: 70px;
     height: 70px;
 }
+.mission-parallax {
+       background-image: url('assets/images/mission-background.jpg');
+        min-height: 500px; 
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
 .mission-background {
     background-image: url('assets/images/mission-background.jpg');
@@ -133,8 +148,24 @@ nav ul{
     font-size: 25px;
 }
 
+/**Features*/
+.features {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, minmax(150px, 450px));
+    grid-gap: 50px;
+    margin: 70px;
+}
+
+.features>article img {
+    width: 100%;
+    max-height: max-content;
+    border: 0;
+  border-radius: 5px;
+  }
+
 /**Media Queries*/
-@media (max-width: 800px) { 
+@media (max-width: 800px) {
     .tribute-container {
         flex-direction: column;
         justify-content: space-around;
@@ -166,12 +197,12 @@ nav ul{
 }
 
 @media (max-width: 600px) {
-    .header-container{
+    .header-container {
         display: block;
         text-align: center;
     }
 
-    .shop-button button{
+    .shop-button button {
         display: none;
     }
 }
