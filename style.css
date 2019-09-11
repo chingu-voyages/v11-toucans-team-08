@@ -10,8 +10,8 @@ body {
 /**header**/
 header {
     min-height: 30px;
-    width: 100%;
-    margin-bottom: 2rem;
+    max-width: 90%;
+    margin: 0 auto;
     padding: 0 10px 0 10px;
 }
 
@@ -28,7 +28,7 @@ header {
 
 .logo h2 {
     color: brown;
-    font-size: 30px;
+    font-size: 35px;
     font-family: 'Mukta', sans-serif;
     cursor: pointer;
 }
@@ -51,6 +51,7 @@ nav ul {
 
 .nav-links li {
     display: inline;
+    font-size: 20px;
 }
 
 .nav-links {
@@ -59,7 +60,7 @@ nav ul {
 
 .shop-button button {
     font-size: 16px;
-    color: darkgrey;
+    color: white;
     font-weight: bolder;
     background-color: brown;
     border-radius: 50px;
@@ -70,6 +71,57 @@ nav ul {
 
 .shop-button button:hover {
     background-color: rgb(187, 100, 100);
+}
+
+/**Section - Slider**/
+
+.image-slider-container{
+    position: relative;
+    min-height: 30vh;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.slider-content{    
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    left: 10%;
+    color: white;
+    padding:20px;
+}
+
+.slide-title{
+    font-size: 25px;
+    font-weight: bolder;    
+}
+
+.slide-paragraph{
+    font-size: 20px;
+    max-width: 300px;
+}
+
+.slide{
+    width: 100%;
+    vertical-align: middle;
+}
+
+.image-slider img{
+    max-width: 100%;    
+    border-radius: 10px;
+}
+
+.slide-button{
+    padding: 10px 30px 10px 30px;
+    background-color: darkgrey;
+    color: white;
+    border-radius: 20px;
+    font-weight: bolder;
+}
+
+.slide-button:hover{
+    background-color: lightgrey;
 }
 
 /**Section - Tribute**/
@@ -161,7 +213,7 @@ nav ul {
     width: 100%;
     max-height: max-content;
     border: 0;
-  border-radius: 5px;
+    border-radius: 5px;
   }
 
 /**Media Queries*/
@@ -194,6 +246,41 @@ nav ul {
         color: #fff;
         font-size: 15px;
     }
+
+    /**media query for image slider start**/
+
+    .image-slider-container{
+        max-width: 100%;
+        padding: 20px 10px 20px 10px;
+        margin: 0 auto;
+    }
+
+    .slider-content{
+        top: 50%;
+        left: 10%;
+        color: white;
+        padding:5px 0 10px 0;
+    }
+
+    .slide-title{
+        font-size: 20px;
+        font-weight: bolder;    
+    }
+
+    .slide-paragraph{
+        font-size: 16px;
+        max-width: 300px;
+    }
+
+    .slide-button{
+        padding: 2px 7px 2px 7px;
+        background-color: darkgrey;
+        color: white;
+        border-radius: 20px;
+        font-weight: bolder;
+        font-size: 10px;
+    }
+    /**media query for image slider end**/
 }
 
 @media (max-width: 600px) {
@@ -205,4 +292,27 @@ nav ul {
     .shop-button button {
         display: none;
     }
+
+    /**media query for image slider start**/
+    
+    .image-slider-container{
+        max-width: 100%;
+        padding: 20px 10px 20px 10px;
+        margin: 0 auto;
+    }
+    .slider-content{
+        top: 30%;
+        left: 10%;
+        color: white;
+        padding:5px 0 10px 0;
+    }
+    .slide-title{
+        font-size: 14px;
+        font-weight: bolder;    
+    }
+    .slide-paragraph{
+        font-size: 10px;
+        max-width: 150px;
+    }
+    /**media query for image slider end**/
 }
