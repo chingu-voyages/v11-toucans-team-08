@@ -1,4 +1,6 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -215,6 +217,92 @@ nav ul {
     border: 0;
     border-radius: 5px;
   }
+
+/**Footer**/
+
+footer{
+    background-color: rgb(128, 128, 128);
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 30px 0 0 0;
+    display: block;
+    font-size: 14px;
+    font-family: 'Mukta', sans-serif;
+}
+
+footer ul{
+    display: block;
+    list-style-type: none;
+}
+
+.footer-top-links li{
+    display: inline-block;
+    margin: 50px 0 10px 0;
+}
+
+footer a{
+    display: block;
+    padding: 10px 5px 10px 5px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;  
+}
+
+.footer-email-input{    
+    display: inline-block;
+    border-bottom: 1px solid white;
+}
+
+button[type=submit]{
+    cursor: pointer;
+    float: left;
+    width: 30px;
+    height: 25.2px;
+    border: none;
+    font-size: 20px;
+    color: white;
+    background-color: transparent;
+}
+
+input[type=email]::placeholder{
+    color: white;
+    font-weight: 400;
+}
+
+input[type=email]{
+    width: 270px;    
+    display: block;
+    float: left;
+    padding: 5px 10px 5px 0;
+    border: none;
+    background-color: transparent;
+}
+
+.footer-social-links{
+    font-size: 20px;
+    margin-bottom: 50px; 
+}
+
+.footer-social-links li{
+    display: inline-block;
+}
+
+.footer-social-links a{
+    display: block;
+    cursor: pointer;
+}
+.footer-social-links li:nth-child(2){
+    margin: 0 10px 0 10px;
+}
+
+.footer-bottom-links li{
+    display: inline-block;
+}
+
+.footer-bottom-links{
+    background-color: rgb(107, 107, 107);
+}
 
 /**Media Queries*/
 @media (max-width: 800px) {
