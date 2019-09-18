@@ -83,7 +83,7 @@ nav ul {
     min-height: 10vh;
     max-width: 90%;
     margin: 0 auto;
-    padding: 40px;
+    /* padding: 40px; */
 }
 
 .slider-content {
@@ -91,18 +91,25 @@ nav ul {
     width: 100%;
     top: 40%;
     left: 10%;
-    color: white;
-    padding: 20px;
+    color: white;    
+    max-width: 300px;
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: 0.009em;   
 }
 
 .slide-title {
-    font-size: 25px;
+    font-size: 40px;
     font-weight: bolder;
+    margin-bottom: 15px;
 }
 
-.slide-paragraph {
-    font-size: 20px;
-    max-width: 300px;
+.slide-paragraph{
+    margin-bottom: 20px;
+}
+
+.paragraph-button-container{
+    text-align: left;    
 }
 
 .slide {
@@ -115,12 +122,15 @@ nav ul {
     border-radius: 10px;
 }
 
-.slide-button {
-    padding: 10px 30px 10px 30px;
+.slide-button{
+    /* padding: 10px 30px 10px 30px; */
+    display: block;
     background-color: darkgrey;
     color: white;
     border-radius: 20px;
-    font-weight: bolder;
+    width: 180px;
+    text-align: center;
+    line-height: 50px;
 }
 
 .slide-button:hover {
@@ -374,37 +384,34 @@ input[type=email] {
     }
 
     /**media query for image slider start**/
-
-    .image-slider-container {
-        max-width: 100%;
-        padding: 20px 10px 20px 10px;
-        margin: 0 auto;
+    .paragraph-button-container{
+        margin-top: 20px;
     }
 
-    .slider-content {
-        top: 50%;
-        left: 10%;
+    .slider-content {        
+        top: 0;
+        margin-bottom: inherit;
+        margin-top: 20px;
         color: white;
         padding: 5px 0 10px 0;
+        text-align: center;
     }
 
     .slide-title {
+        margin-top: 15px;
         font-size: 20px;
-        font-weight: bolder;
     }
 
     .slide-paragraph {
-        font-size: 16px;
-        max-width: 300px;
+        font-size: 14px;
+        max-width: 100vw;
     }
 
     .slide-button {
-        padding: 2px 7px 2px 7px;
-        background-color: darkgrey;
-        color: white;
-        border-radius: 20px;
-        font-weight: bolder;
         font-size: 10px;
+        width: 100px;
+        margin-left: 30%;
+        line-height: 20px;
     }
 
     /**media query for image slider end**/
@@ -419,31 +426,4 @@ input[type=email] {
     .shop-button button {
         display: none;
     }
-
-    /**media query for image slider start**/
-
-    .image-slider-container {
-        max-width: 100%;
-        padding: 20px 10px 20px 10px;
-        margin: 0 auto;
-    }
-
-    .slider-content {
-        top: 30%;
-        left: 10%;
-        color: white;
-        padding: 5px 0 10px 0;
-    }
-
-    .slide-title {
-        font-size: 14px;
-        font-weight: bolder;
-    }
-
-    .slide-paragraph {
-        font-size: 10px;
-        max-width: 150px;
-    }
-
-    /**media query for image slider end**/
 }
