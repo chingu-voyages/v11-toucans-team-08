@@ -312,11 +312,7 @@ input[type=email] {
     padding: 0 0 15vh 0;
     background-color: #EBE7EC;
   }
-
-  .glide-wrapper {
-      display: grid;
-      grid-template-columns: repeat(250px);
-  }
+  
   .glide__track {
     overflow: visible;
     height: 60vh;
