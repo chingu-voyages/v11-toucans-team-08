@@ -91,11 +91,11 @@ nav ul {
     width: 100%;
     top: 40%;
     left: 10%;
-    color: white;    
+    color: white;
     max-width: 300px;
     font-size: 17px;
     line-height: 30px;
-    letter-spacing: 0.009em;   
+    letter-spacing: 0.009em;
 }
 
 .slide-title {
@@ -104,12 +104,12 @@ nav ul {
     margin-bottom: 15px;
 }
 
-.slide-paragraph{
+.slide-paragraph {
     margin-bottom: 20px;
 }
 
-.paragraph-button-container{
-    text-align: left;    
+.paragraph-button-container {
+    text-align: left;
 }
 
 .slide {
@@ -122,7 +122,7 @@ nav ul {
     border-radius: 10px;
 }
 
-.slide-button{
+.slide-button {
     /* padding: 10px 30px 10px 30px; */
     display: block;
     background-color: darkgrey;
@@ -238,6 +238,7 @@ footer {
     display: block;
     text-align: center;
     padding: 30px 0 0 0;
+    margin-top: 50px;
     display: block;
     font-size: 14px;
     font-family: 'Mukta', sans-serif;
@@ -320,38 +321,56 @@ input[type=email] {
 /**Carousel component*/
 .glide {
     padding: 0 0 15vh 0;
-    background-color: #EBE7EC;
-  }
-  
-  .glide__track {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.glide__track {
     overflow: visible;
     height: 60vh;
-  }
-  .glide__slide {
+    max-width: 100%;
+    border-radius: 10px;
+    object-position: center;
+}
+
+.glide__slide {
     transition: all 200ms ease;
     -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
     -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-  }
-  .glide__slide.active {
+    transform: translate3d(0, 0, 0);
+
+}
+
+.glide__slide.active {
     -webkit-transform: scale(1.02);
-            transform: scale(1.02);
-  }
-  .glide__slide.pre {
+    transform: scale(1.02);
+}
+
+.glide__slide.pre {
     -webkit-transform: perspective(50em) rotateY(15deg);
-            transform: perspective(50em) rotateY(15deg);
-  }
-  .glide__slide.following {
+    transform: perspective(50em) rotateY(15deg);
+
+}
+
+.glide__slide.following {
     -webkit-transform: perspective(50em) rotateY(-15deg);
-            transform: perspective(50em) rotateY(-15deg);
-  }
-  .glide--horizontal .glide__bullets {
+    transform: perspective(50em) rotateY(-15deg);
+}
+
+.glide--horizontal .glide__bullets {
     bottom: 25%;
-  } 
-  .glide__bullets {
-      color: aqua;
-  }
+}
+
+.glide__bullets {
+    color: aqua;
+}
+
+img.glide_slide {
+    object-fit: fill;
+}
+
 /**Media Queries*/
 @media (max-width: 800px) {
     .tribute-container {
@@ -384,11 +403,11 @@ input[type=email] {
     }
 
     /**media query for image slider start**/
-    .paragraph-button-container{
+    .paragraph-button-container {
         margin-top: 20px;
     }
 
-    .slider-content {        
+    .slider-content {
         top: 0;
         margin-bottom: inherit;
         margin-top: 20px;
