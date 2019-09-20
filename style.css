@@ -368,7 +368,7 @@ input[type=email] {
 }
 
 img.glide_slide {
-    object-fit: fill;
+    object-fit: inherit;
 }
 
 /**Media Queries*/
