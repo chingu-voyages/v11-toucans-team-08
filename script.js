@@ -32,3 +32,28 @@ new Glide('.glide').mount({
   type:'carousel',
 
 });
+
+
+/**faq**/
+
+const question = document.getElementsByClassName("question-title");
+let i;
+
+for (i = 0; i < question.length; i++) {
+  question[i].addEventListener("click", function(e) {
+
+    e.preventDefault();
+
+    this.classList.toggle("active");
+    
+    const answer = this.nextElementSibling;
+
+    // console.log(answer);
+    if (answer.style.display === "block") {
+      answer.style.display = "none";
+    } else {
+      answer.style.display = "block";      
+    }
+  });
+ 
+}
