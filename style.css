@@ -12,10 +12,11 @@ body {
 
 /**header**/
 header {
-    min-height: 30px;
+    min-height: 20px;
     max-width: 90%;
     margin: 0 auto;
     padding: 0 10px 0 10px;
+    margin-bottom: 20px;
 }
 
 .header-container {
@@ -81,7 +82,7 @@ nav ul {
 .image-slider-container {
     position: relative;
     min-height: 10vh;
-    max-width: 90%;
+    max-width: 70%;
     margin: 0 auto;
     /* padding: 40px; */
 }
@@ -268,6 +269,10 @@ nav ul {
     color: grey;
     cursor: pointer;
     text-decoration: none;
+}
+
+.question{
+    padding-left: px;
 }
 
 .question-title::before{
@@ -518,5 +523,10 @@ img.glide_slide {
 
     .shop-button button {
         display: none;
+    }
+
+    .image-slider-container {
+        max-width: 95%;
+        margin: 0 auto;
     }
 }
