@@ -13,10 +13,13 @@ body {
 /**header**/
 header {
     padding: 0 10px 0 10px;
-    margin-bottom: 20px;    
+    margin-bottom: 20px;
     position: sticky;
     top: 0;
     background-color: white;
+    box-shadow:
+        inset 0 -3em 3em #EBE7EC,
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
     z-index: 10;
 }
 
@@ -80,18 +83,20 @@ nav ul {
 .shop-button button:hover {
     background-color: rgb(187, 100, 100);
 }
+
 /**Text after header**/
 
-.advertise-text{
+.advertise-text {
     text-align: center;
     padding: 10px 0;
     margin-bottom: 40px;
     font-size: 16px;
-    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(211, 164, 190));
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(211, 164, 190));
 }
 
-.advertise-text small, a{
-    color: grey;  
+.advertise-text small,
+a {
+    color: grey;
 }
 
 /**Section - Slider**/
@@ -236,89 +241,123 @@ nav ul {
 .features {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(2, minmax(150px, 450px));
+    grid-template-columns: repeat(2, 450px);
     grid-gap: 50px;
     margin: 70px;
 }
 
 .features>article img {
     width: 100%;
-    max-height: max-content;
     border: 0;
     border-radius: 5px;
 }
 
+.columns-card_heading {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 2.5;
+    color: #606060;
+}
+
+.columns-card_body {
+    font-family: 'Big Shoulders Text', cursive;
+    line-height: 1.6em;
+    letter-spacing: 0.0125em;
+    color: #606060;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.columns-card>ul {
+    list-style: none;
+}
+
+.card_icon {
+    margin-top: 15px;
+}
+
+.card_icon>i {
+    padding-right: 10px;
+    color: #b96262;
+}
+
 /**faq**/
 
-.faq-container{
+.faq-container {
     max-width: 90%;
     margin: 20px auto;
     padding: 40px 40px 40px 40px;
     overflow: hidden;
 }
-.faq-title{
+
+.faq-title {
     float: left;
     width: 40%;
     color: grey;
 }
-.question-main{
+
+.question-main {
     float: right;
     width: 60%;
 }
-.answer-container{
+
+.answer-container {
     overflow: hidden;
     display: none;
     padding: 0 18px;
     transition: max-height 0.2s ease-out;
 }
 
-.answer{
+.answer {
     margin: 5px 0;
 }
 
-.answer-container.show{
+.answer-container.show {
     display: block;
     /* max-height: 0px;     */
 }
 
-.question-title{
-    font-size: 18px;    
+.question-title {
+    font-size: 18px;
     color: grey;
     cursor: pointer;
     text-decoration: none;
 }
 
-.question{
+.question {
     padding-left: px;
 }
 
-.question-title::before{
+.question-title::before {
     content: '\002B';
 }
 
-.active::before{
+.active::before {
     content: "\2212";
 }
 
-.active, .question-answer-container:hover {
+.active,
+.question-answer-container:hover {
     background-color: #ccc;
-  }
-
-.question-answer-container{
-    margin-bottom: 20px;    
 }
 
-.see-all-faq{    
+.question-answer-container {
+    margin-bottom: 20px;
+}
+
+.see-all-faq {
     border: none;
     background-color: white;
     color: grey;
     text-align: center;
 }
-.all-faq-container{
+
+.all-faq-container {
     text-align: center;
 }
 
-.all-faq-container a{
+.all-faq-container a {
     padding: 15px 35px;
     background-color: white;
     border: 1px solid grey;
@@ -481,6 +520,17 @@ img.glide_slide {
     .tribute-item img {
         width: 40px;
         height: 40px;
+    }
+
+    .features {
+        grid-template-columns: repeat(2, minmax(150px, 450px));
+        grid-gap: 25px;
+        margin: 25px;
+    }
+
+    .columns-card_heading {
+        font-size: 20px;
+        letter-spacing: 1px;
     }
 
     .mission-background {
