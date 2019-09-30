@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>  
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -51,10 +51,10 @@
                 <h2 class="slide-title">Lorem, ipsum.</h2>
                 <div class="paragraph-button-container">
                     <p class="slide-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea fugit nam
-                    doloremque laudantium quas.</p>
+                        doloremque laudantium quas.</p>
                     <a class="slide-button">Learn More</a>
                 </div>
-                
+
             </div>
             <!--Photo Credit: https://www.pexels.com/ Free to use. No attribution required. url: https://www.pexels.com/photo/shallow-focus-photography-of-succulent-plant-1590077/ -->
             <img class="slide" src="./assets/images/img1.jpg" alt="slide-1">
@@ -118,27 +118,30 @@
         </article>
         <article>
             <div class="columns-card">
-                <p class = "columns-card_heading">Lorem ipsum</p>
-                <p class = "columns-card_body">Ut ac odio scelerisque ante ornare commodo. Sed faucibus dui libero, in tincidunt purus pretium
+                <p class="columns-card_heading">Lorem ipsum</p>
+                <p class="columns-card_body">Ut ac odio scelerisque ante ornare commodo. Sed faucibus dui libero, in
+                    tincidunt purus pretium
                     quis.
                     Fusce posuere egestas enim eu viverra.</p>
                 <ul>
-                    <li class = "card_icon"><i class="fas fa-tint"></i>Sed faucibus</li>
-                    <li class = "card_icon"><i class="fab fa-500px"></i>Fusce posuere</li>
-                    <li class = "card_icon"><i class="fas fa-medal"></i>Morbi dictum</li>
+                    <li class="card_icon"><i class="fas fa-tint"></i>Sed faucibus</li>
+                    <li class="card_icon"><i class="fab fa-500px"></i>Fusce posuere</li>
+                    <li class="card_icon"><i class="fas fa-medal"></i>Morbi dictum<i class="far fa-question-circle"
+                            id="modal_opener" style="color: #0066ff;"></i></li>
                 </ul>
             </div>
         </article>
         <article>
             <div class="columns-card">
-                <p class = "columns-card_heading">Lorem ipsum</p>
-                <p class = "columns-card_body">Ut ac odio scelerisque ante ornare commodo. Sed faucibus dui libero, in tincidunt purus pretium
+                <p class="columns-card_heading">Lorem ipsum</p>
+                <p class="columns-card_body">Ut ac odio scelerisque ante ornare commodo. Sed faucibus dui libero, in
+                    tincidunt purus pretium
                     quis.
                     Fusce posuere egestas enim eu viverra.</p>
                 <ul>
-                        <li class = "card_icon"><i class="fas fa-stopwatch"></i>Morbi dictum</li>
-                        <li class = "card_icon"><i class="fas fa-sign-out-alt"></i>Fusce posuere</li>
-                        <li class = "card_icon"><i class="fas fa-suitcase"></i>Sed faucibus</li>
+                    <li class="card_icon"><i class="fas fa-stopwatch"></i>Morbi dictum</li>
+                    <li class="card_icon"><i class="fas fa-sign-out-alt"></i>Fusce posuere</li>
+                    <li class="card_icon"><i class="fas fa-suitcase"></i>Sed faucibus</li>
                 </ul>
             </div>
         </article>
@@ -151,18 +154,67 @@
         </article>
         <article>
             <div class="columns-card">
-                <p class = "columns-card_heading">Lorem ipsum</p>
-                <p class = "columns-card_body">Ut ac odio scelerisque ante ornare commodo. Sed faucibus dui libero, in tincidunt purus pretium
+                <p class="columns-card_heading">Lorem ipsum</p>
+                <p class="columns-card_body">Ut ac odio scelerisque ante ornare commodo. Sed faucibus dui libero, in
+                    tincidunt purus pretium
                     quis.
                     Fusce posuere egestas enim eu viverra.</p>
                 <ul>
-                        <li class = "card_icon"><i class="far fa-heart"></i>Morbi dictum</li>
-                        <li class = "card_icon"><i class="fas fa-angle-double-right"></i>Sed faucibus</li>
-                        <li class = "card_icon"><i class="fas fa-rocket"></i>Fusce posuere</li>
+                    <li class="card_icon"><i class="far fa-heart"></i>Morbi dictum</li>
+                    <li class="card_icon"><i class="fas fa-angle-double-right"></i>Sed faucibus</li>
+                    <li class="card_icon"><i class="fas fa-rocket"></i>Fusce posuere</li>
                 </ul>
             </div>
         </article>
     </section>
+
+    <!--Modal Begins-->
+    <div class="modal" style="display: none">
+        <div class="overlay"></div>
+        <div class="modal_content">
+            <!-- Dynamic Section -->
+            <section class ="modal_header">
+                    <i class="fas fa-user-check"></i>            
+                    <h2>Lorem ipsum dolor sit amet.</h2>
+                    <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque
+                        volutpat varius est, nec ultricies lectus consequat vitae.
+                        Aliquam erat volutpat. </p>
+            </section>
+           
+
+            <section class="modal_features">
+                <article>
+                        <img src="assets/images/erlanger.jpg" alt="Sample photo">
+                </article>
+                <article>
+                        <p class="">Lorem ipsum</p>
+                        <ul class = "modal_features_ul">
+                                <li class="">Morbi dictum</li>
+                                <li class="">Sed faucibus</li>
+                                <li class="">Fusce posuere</li>
+                        </ul>
+                </article>
+
+                <article>
+                        <img src="assets/images/erlanger.jpg" alt="Sample photo">
+                </article>
+
+                <article>
+                        <p class="">Lorem ipsum</p>
+                        <ul class ="modal_features_ul">
+                                <li class="">Morbi dictum</li>
+                                <li class="">Sed faucibus</li>
+                                <li class="">Fusce posuere</li>
+                            </ul>
+                </article>
+
+            </section>
+
+            <button class="close_modal">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
 
     <div class="glide">
         <!-- Slides here -->
@@ -208,63 +260,68 @@
                 <h2>Frequently asked questions</h2>
             </div>
 
-            <div class="question-main">         
+            <div class="question-main">
 
-            <div class="question-answer-container">
-                <a href="#" class="question-title">
-                    <span class="question">Lorem ipsum dolor sit amet?</span>
-                </a>
-                <div class="answer-container">
-                    <div class="answer">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione explicabo nemo fugiat perspiciatis eligendi dolore iste iusto exercitationem maxime velit.                          
+                <div class="question-answer-container">
+                    <a href="#" class="question-title">
+                        <span class="question">Lorem ipsum dolor sit amet?</span>
+                    </a>
+                    <div class="answer-container">
+                        <div class="answer">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione explicabo nemo fugiat
+                            perspiciatis eligendi dolore iste iusto exercitationem maxime velit.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-answer-container">
+                    <a href="#" class="question-title">
+                        <span class="question">Lorem ipsum dolor sit amet consectetur amet consectetur?</span>
+                    </a>
+                    <div class="answer-container">
+                        <div class="answer">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione explicabo nemo fugiat
+                            perspiciatis eligendi dolore iste iusto exercitationem maxime velit.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-answer-container">
+                    <a href="#" class="question-title">
+                        <span class="question">Lorem ipsum dolor sit amet consectetur amet consectetur ipsum?</span>
+                    </a>
+                    <div class="answer-container">
+                        <div class="answer">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione explicabo nemo fugiat
+                            perspiciatis eligendi dolore iste iusto exercitationem maxime velit.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-answer-container">
+                    <a href="#" class="question-title">
+                        <span class="question">Lorem ipsum dolor sit amet consectetur consectetur ipsum?</span>
+                    </a>
+                    <div class="answer-container">
+                        <div class="answer">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione explicabo nemo fugiat
+                            perspiciatis eligendi dolore iste iusto exercitationem maxime velit.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-answer-container">
+                    <a href="#" class="question-title">
+                        <span class="question">Lorem ipsum dolor sit amet consectetur?</span>
+                    </a>
+                    <div class="answer-container">
+                        <div class="answer">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione explicabo nemo fugiat
+                            perspiciatis eligendi dolore iste iusto exercitationem maxime velit.
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="question-answer-container">
-                <a href="#" class="question-title">
-                    <span class="question">Lorem ipsum dolor sit amet consectetur amet consectetur?</span>
-                </a>
-                <div class="answer-container">
-                    <div class="answer">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione explicabo nemo fugiat perspiciatis eligendi dolore iste iusto exercitationem maxime velit.                          
-                    </div>
-                </div>
-            </div>
-
-            <div class="question-answer-container">
-                <a href="#" class="question-title">
-                    <span class="question">Lorem ipsum dolor sit amet consectetur amet consectetur ipsum?</span>
-                </a>
-                <div class="answer-container">
-                    <div class="answer">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione explicabo nemo fugiat perspiciatis eligendi dolore iste iusto exercitationem maxime velit.                          
-                    </div>
-                </div>
-            </div>
-
-            <div class="question-answer-container">
-                <a href="#" class="question-title">
-                    <span class="question">Lorem ipsum dolor sit amet consectetur consectetur ipsum?</span>
-                </a>
-                <div class="answer-container">
-                    <div class="answer">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione explicabo nemo fugiat perspiciatis eligendi dolore iste iusto exercitationem maxime velit.                          
-                    </div>
-                </div>
-            </div>
-
-            <div class="question-answer-container">
-                <a href="#" class="question-title">
-                    <span class="question">Lorem ipsum dolor sit amet consectetur?</span>
-                </a>
-                <div class="answer-container">
-                    <div class="answer">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione explicabo nemo fugiat perspiciatis eligendi dolore iste iusto exercitationem maxime velit.                       
-                    </div>
-                </div>
-            </div>
-        </div>
 
         </div>
 
@@ -306,10 +363,7 @@
     </footer>
 
     <!--Features Section ends-->
-    <!-- <script src="glider.js"></script> -->
     <script src="script.js"></script>
-    <!-- <script src="faq.js"></script> -->
-    
 </body>
 
 </html>

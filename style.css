@@ -278,8 +278,132 @@ a {
 }
 
 .card_icon>i {
-    padding-right: 10px;
+    padding: 0 10px 0 10px;
     color: #b96262;
+}
+
+.fa-question-circle {
+    cursor: pointer;
+}
+
+
+/**Modal**/
+
+#modal_opener {
+    padding: 4px 0;
+    left: 50%;
+    top: 50%;
+    border-radius: 3px;
+    text-align: center;
+    color: #fff;
+    padding: 10px 10px;
+    border: none;
+    transition: background 0.2s ease;
+  }
+  
+  #modal_opener:hover {
+    cursor: pointer;
+    background: #469fdb;
+  }
+    
+  #modal_opener::after {
+    content: "";
+    display: block;
+    left: 50%;
+    width: 100%;
+    height: 10%;
+    border-radius: 50%;
+    background-color: rgba(230, 169, 169, 0.4);
+    opacity: 0.4;
+    transform: translateX(-50%) translateY(-50%);
+    bottom: -30px;
+  }
+  
+  .modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 990;
+  }
+  
+  .modal .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 995;
+    background: rgba(0,0,0,0.85);
+  }
+  
+  .modal .modal_content {
+    z-index: 999;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 100%;
+    overflow: auto;
+    background: #fff;
+    padding-bottom: 20px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.7);
+    text-align: center;
+    border-radius: 4px;
+    width: 520px; /* This just a default width */
+  }
+  
+  .modal .modal_content > h2 {
+    font-size: 28px;
+    font-weight: 200;
+    margin: 20px 0 40px;
+    text-align: center;
+  }
+  
+  .modal .modal_content .buttons_wrapper {
+    padding: 20px;
+  }
+  
+  .modal .close_modal {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    cursor: pointer;
+    font-size: 25px;
+    opacity: 0.5;
+    background: none;
+    border: none;
+    transition: opacity 0.2s ease;
+  }
+  
+  .modal .close_modal:hover {
+    opacity: 0.9;
+  }
+
+  .modal_features {
+
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 100px);
+  grid-gap: 50px;
+  margin: 70px;
+  }
+
+  .modal_header {
+      margin: 0;
+      padding: 20px;
+      background-color: #F8F8F8;
+  }
+
+  .modal_features>article img {
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+}
+
+.modal_features_ul {
+    padding: 10px;
 }
 
 /**faq**/
@@ -526,6 +650,14 @@ img.glide_slide {
         grid-template-columns: repeat(2, minmax(150px, 450px));
         grid-gap: 25px;
         margin: 25px;
+    }
+
+    .modal .modal_content {
+        max-width: 600px; 
+    }
+      
+      .modal .modal_content > h2 {
+        font-size: 17px;
     }
 
     .columns-card_heading {
