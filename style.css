@@ -78,10 +78,121 @@ nav ul {
     border: none;
     padding: 5px 20px 5px 20px;
     margin-left: 10px;
+    cursor: pointer;
 }
 
-.shop-button button:hover {
-    background-color: rgb(187, 100, 100);
+.close{
+    display: flex;
+    justify-content: center; 
+}
+
+.close button{     
+    background-color: #c2bdbd;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.shop-modal{
+    position: fixed;
+    right: 0;
+    top: 58px;
+    overflow: auto;
+    background-color: white;
+    z-index: 3;
+    height: 100vh;
+    opacity: 0;
+    visibility: hidden;
+    width: 20%;
+    padding: 40px 20px 20px 20px;
+    box-shadow: inset 0 -3em 3em #EBE7EC, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    /* transform: translateX(40px);
+    transition: all 1.5s ease; */
+    overflow: auto;
+}
+
+.show-shop-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.starter-plan{
+    width: 80%;
+    float: left;
+   
+}
+
+.plan-price{
+    width: 20%;
+    float: right;      
+}
+
+.plan-detail{
+    padding-bottom: 30px;
+    font-size: 20px;
+    color: rgb(180, 115, 115);    
+}
+
+.modal-shop-now{
+    display: flex;
+    justify-content: center;
+}
+
+.modal-shop-now button{
+    border: none;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 20px;
+    padding: 10px 40px 10px 40px;
+    background-color: #c2bdbd;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.Learn-more-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;    
+}
+
+.Learn-more-button a{
+    text-decoration: none;
+}
+
+.Learn-more-button a:hover{
+    text-decoration: underline;
+}
+
+.price-icons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.price{
+    border-radius: 20px;
+    background-color: #a35f5f;
+    padding: 8px;
+}
+
+.price-icons i{
+    font-size: 12px;
+}
+
+.price-icons span{
+    font-size: 16px;
+}
+
+.product-image img{
+    max-width: 100%;
+}
+.product-image{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
 }
 
 /**Text after header**/
