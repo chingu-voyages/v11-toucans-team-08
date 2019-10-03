@@ -85,3 +85,25 @@ function toggleModal() {
 }
 
 btn.addEventListener('click', toggleModal);
+
+/** Shop modal **/
+
+var shopModal = document.querySelector(".shop-modal");
+
+var openModalButton = document.querySelector(".shop-button").getElementsByTagName("button")[0];
+
+var closeButton = document.getElementsByClassName("close")[0];
+
+function toggleShopModal() {
+  shopModal.classList.toggle("show-shop-modal");
+}
+
+function windowOnClick(event) {
+  if (event.target === shopModal) {
+      toggleShopModal();
+  }
+}
+
+openModalButton.addEventListener("click", toggleShopModal,false);
+closeButton.addEventListener("click", toggleShopModal,false);
+window.addEventListener("click", windowOnClick,false);
