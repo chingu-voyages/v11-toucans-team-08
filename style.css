@@ -691,14 +691,14 @@ input[type=email] {
 /**Carousel component*/
 .glide {
     padding: 0 0 15vh 0;
-    max-width: 90%;
+    max-width: 70%;
     margin: 0 auto;
     padding: 0px;
 }
 
 .glide__track {
     overflow: visible;
-    height: 60vh;
+    height: 80vh;
     max-width: 100%;
     border-radius: 10px;
     object-position: center;
@@ -710,6 +710,7 @@ input[type=email] {
     transform-origin: 50% 50%;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+    object-fit: cover;
 
 }
 
@@ -737,8 +738,9 @@ input[type=email] {
     color: aqua;
 }
 
-img.glide_slide {
-    object-fit: inherit;
+.glide_image {
+    width: 100%;
+    object-fit: fill;
 }
 
 /**Media Queries*/
@@ -789,6 +791,17 @@ img.glide_slide {
     .mission-content p:nth-child(2) {
         color: #fff;
         font-size: 15px;
+    }
+
+    .glide_image {
+        width: 100%;
+        height: 40vh;
+        object-fit: cover;
+    }
+
+    .glide__track {
+        height: 40vh;
+        max-width: 100%;   
     }
 
     /**media query for image slider start**/
