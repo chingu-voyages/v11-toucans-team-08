@@ -81,12 +81,12 @@ nav ul {
     cursor: pointer;
 }
 
-.close{
+.close {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
 }
 
-.close button{     
+.close button {
     background-color: #c2bdbd;
     border: none;
     border-radius: 5px;
@@ -95,7 +95,7 @@ nav ul {
     margin-bottom: 40px;
 }
 
-.shop-modal{
+.shop-modal {
     position: fixed;
     right: 0;
     top: 58px;
@@ -120,29 +120,29 @@ nav ul {
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
 
-.starter-plan{
+.starter-plan {
     width: 80%;
     float: left;
-   
+
 }
 
-.plan-price{
+.plan-price {
     width: 20%;
-    float: right;      
+    float: right;
 }
 
-.plan-detail{
+.plan-detail {
     padding-bottom: 30px;
     font-size: 20px;
-    color: rgb(180, 115, 115);    
+    color: rgb(180, 115, 115);
 }
 
-.modal-shop-now{
+.modal-shop-now {
     display: flex;
     justify-content: center;
 }
 
-.modal-shop-now button{
+.modal-shop-now button {
     border: none;
     font-size: 20px;
     font-weight: bolder;
@@ -156,40 +156,41 @@ nav ul {
 .Learn-more-button {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;    
+    margin-bottom: 20px;
 }
 
-.Learn-more-button a{
+.Learn-more-button a {
     text-decoration: none;
 }
 
-.Learn-more-button a:hover{
+.Learn-more-button a:hover {
     text-decoration: underline;
 }
 
-.price-icons{
+.price-icons {
     display: flex;
     justify-content: space-between;
 }
 
-.price{
+.price {
     border-radius: 20px;
     background-color: #a35f5f;
     padding: 8px;
 }
 
-.price-icons i{
+.price-icons i {
     font-size: 12px;
 }
 
-.price-icons span{
+.price-icons span {
     font-size: 16px;
 }
 
-.product-image img{
+.product-image img {
     max-width: 100%;
 }
-.product-image{
+
+.product-image {
     display: flex;
     justify-content: center;
     margin-top: 50px;
@@ -410,14 +411,14 @@ a {
     padding: 10px 10px;
     border: none;
     transition: background 0.2s ease;
-  }
-  
-  #modal_opener:hover {
+}
+
+#modal_opener:hover {
     cursor: pointer;
     background: #469fdb;
-  }
-    
-  #modal_opener::after {
+}
+
+#modal_opener::after {
     content: "";
     display: block;
     left: 50%;
@@ -428,29 +429,31 @@ a {
     opacity: 0.4;
     transform: translateX(-50%) translateY(-50%);
     bottom: -30px;
-  }
-  
-  .modal {
+}
+
+.modal {
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     z-index: 990;
-  }
-  
-  .modal .overlay {
+}
+
+.modal .overlay {
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     z-index: 995;
-    background: rgba(0,0,0,0.85);
-  }
-  
-  .modal .modal_content {
+    background: rgba(0, 0, 0, 0.85);
+}
+
+.modal_content {
     z-index: 999;
+    overflow: auto;
+    overflow-y: hidden;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -459,24 +462,34 @@ a {
     overflow: auto;
     background: #fff;
     padding-bottom: 20px;
-    box-shadow: 0 1px 5px rgba(0,0,0,0.7);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
     text-align: center;
     border-radius: 4px;
-    width: 520px; /* This just a default width */
-  }
-  
-  .modal .modal_content > h2 {
+    width: 520px;
+    /* This just a default width */
+}
+
+.modal_content h2 {
     font-size: 28px;
     font-weight: 200;
-    margin: 20px 0 40px;
+    margin: 20px 0px 15px;
     text-align: center;
-  }
-  
-  .modal .modal_content .buttons_wrapper {
+    font-family: 'Grenze', serif;
+
+}
+
+.modal_content p {
+    font-family: 'Grenze', serif;
+    font-size: 17px;
+
+}
+
+
+.modal .modal_content .buttons_wrapper {
     padding: 20px;
-  }
-  
-  .modal .close_modal {
+}
+
+.modal .close_modal {
     position: absolute;
     left: 10px;
     top: 10px;
@@ -486,35 +499,49 @@ a {
     background: none;
     border: none;
     transition: opacity 0.2s ease;
-  }
-  
-  .modal .close_modal:hover {
+}
+
+.modal .close_modal:hover {
     opacity: 0.9;
-  }
+}
 
-  .modal_features {
+.modal_features {
 
-  display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(2, 100px);
-  grid-gap: 50px;
-  margin: 70px;
-  }
+    display: grid;
+    overflow: auto;
+    overflow-y: hidden;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(2, 130px);
+    grid-gap: 30px;
+    margin-top: 20px;
+}
+.modal_features_card {
+    line-height: 30px;
+}
+.modal_features p {
+    padding: 0px;
+}
 
-  .modal_header {
-      margin: 0;
-      padding: 20px;
-      background-color: #F8F8F8;
-  }
+.modal_header {
+    margin: 0;
+    padding: 10px;
+    background-color: #F8F8F8;
+}
 
-  .modal_features>article img {
+.modal_features>article img {
     width: 100%;
     border: 0;
     border-radius: 5px;
 }
 
 .modal_features_ul {
-    padding: 10px;
+    text-align: left;
+    padding-left: 15px;
+
+}
+.modal_features_header {
+    text-align: left;
+
 }
 
 /**faq**/
@@ -765,12 +792,21 @@ input[type=email] {
         margin: 25px;
     }
 
-    .modal .modal_content {
-        max-width: 600px; 
+    .modal_content {
+        max-width: 300px;
+        max-height: 600px;
     }
-      
-      .modal .modal_content > h2 {
-        font-size: 17px;
+
+    .modal_content h2 {
+        font-size: 20px;
+    }
+    .modal_content p {
+        font-family: 'Grenze', serif;
+        font-size: 15px;
+    }
+
+    .modal_features>article img {
+        width: 70%;
     }
 
     .columns-card_heading {
@@ -801,7 +837,7 @@ input[type=email] {
 
     .glide__track {
         height: 40vh;
-        max-width: 100%;   
+        max-width: 100%;
     }
 
     /**media query for image slider start**/
