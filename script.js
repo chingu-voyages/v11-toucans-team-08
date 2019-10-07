@@ -107,3 +107,17 @@ function windowOnClick(event) {
 openModalButton.addEventListener("click", toggleShopModal,false);
 closeButton.addEventListener("click", toggleShopModal,false);
 window.addEventListener("click", windowOnClick,false);
+
+//logo
+
+function animatelogo(){
+  let animatelogo = document.getElementById("animatelogo");
+  animatelogo.innerHTML = "&#xf06c";
+
+  setTimeout(function(){
+      animatelogo.innerHTML = "&#xf4d8";
+  },1000);
+}
+animatelogo();
+
+setInterval(animatelogo, 2000);
