@@ -35,20 +35,14 @@ header {
 
 .logo {
     margin-right: auto;
-    color: #4b8b3b;
 }
 
-#animatelogo{
-    font-size: 35px;
-    padding: 20px;
-}
-
-/* .logo h2 {
+.logo h2 {
     color: grey;
     font-size: 35px;
     font-family: 'Mukta', sans-serif;
     cursor: pointer;
-} */
+}
 
 .nav-links a {
     color: grey;
