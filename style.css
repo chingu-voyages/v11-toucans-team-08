@@ -73,10 +73,10 @@ nav ul {
     font-size: 16px;
     color: white;
     font-weight: bolder;
-    background-color: brown;
+    background-color:#009688;
     border-radius: 50px;
     border: none;
-    padding: 5px 20px 5px 20px;
+    padding: 10px 20px 10px 20px;
     margin-left: 10px;
     cursor: pointer;
 }
@@ -87,12 +87,13 @@ nav ul {
 }
 
 .close button {
-    background-color: #c2bdbd;
+    background-color: #004a7c;
     border: none;
     border-radius: 5px;
     padding: 10px;
     font-weight: bold;
     margin-bottom: 40px;
+    color: white;
 }
 
 .shop-modal {
@@ -100,12 +101,12 @@ nav ul {
     right: 0;
     top: 58px;
     overflow: auto;
-    background-color: white;
+    background-color: #e8f1f5;
     z-index: 3;
     height: 100vh;
     opacity: 0;
     visibility: hidden;
-    width: 20%;
+    max-width: 60%;
     padding: 40px 20px 20px 20px;
     box-shadow: inset 0 -3em 3em #EBE7EC, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
     /* transform: translateX(40px);
@@ -148,9 +149,10 @@ nav ul {
     font-weight: bolder;
     border-radius: 20px;
     padding: 10px 40px 10px 40px;
-    background-color: #c2bdbd;
+    background-color: #004a7c;
     margin-top: 20px;
     margin-bottom: 20px;
+    color: white;
 }
 
 .Learn-more-button {
@@ -881,6 +883,10 @@ input[type=email] {
     }
 
     .shop-button button {
+        display: none;
+    }
+
+    .shop-modal{
         display: none;
     }
 
